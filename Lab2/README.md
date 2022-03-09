@@ -15,4 +15,4 @@ Single node:
 
 Redis Clusters:
 
-```ssh -i "redis-nodes.pem" ec2-user@ec2-44-194-218-177.compute-1.amazonaws.com```
+```ssh -i "redis-nodes.pem" ec2-user@ec2-35-153-77-109.compute-1.amazonaws.com```
