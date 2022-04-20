@@ -20,11 +20,10 @@ services:
     working_dir: /home/frontend
     volumes:
       - ./frontend:/home/frontend
+    environment:
+      - NODE_ENV=production
     ports:
       - "3000:3000"
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
     command: "npm start"
   backend:
     container_name: backend
@@ -34,9 +33,9 @@ services:
     working_dir: /home/backend
     volumes:
       - ./backend:/home/backend
+    environment:
+      - NODE_ENV=PRODUCTION
+      - URL_DB_CONNECTION=mongodb://localhost/bookstore-production
     ports:
       - "5000:5000"
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
     command: "npm start"
