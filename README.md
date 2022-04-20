@@ -1,5 +1,5 @@
 # svaneg11_ST0263
-Repositorio para almacenar los trabajos de TET.
+Repositorio para almacenar los laboratorios de Topicos especiales de Telemática.
 
 
 ## Unidad 1
