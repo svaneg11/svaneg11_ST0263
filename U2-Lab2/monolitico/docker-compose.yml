@@ -19,12 +19,12 @@ services:
     container_name: frontend
     image: node
     user: node
-    restart: always
     working_dir: /home/frontend
     volumes:
       - ./frontend:/home/frontend
     environment:
       - NODE_ENV=production
+      - DANGEROUSLY_DISABLE_HOST_CHECK=true
     ports:
     - "3000:3000"
     restart: always
@@ -33,7 +33,6 @@ services:
     container_name: backend
     image: node
     user: node
-    restart: always
     working_dir: /home/backend
     volumes:
       - ./backend:/home/backend
