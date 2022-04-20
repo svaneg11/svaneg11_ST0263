@@ -1,0 +1,42 @@
+version: '3.1'
+services:
+#  nginx: #dsadas
+#    container_name: nginx
+#    image: nginx
+#    volumes:
+#    - ./nginx.conf:/etc/nginx/nginx.conf:ro
+#    - ./ssl:/etc/nginx/ssl
+#    - ./ssl.conf:/etc/nginx/ssl.conf
+#    ports:
+#    - 80:80
+#    - 443:443
+#    depends_on:
+#    - frontend
+  frontend:
+    container_name: frontend
+    image: node
+    user: node
+    restart: always
+    working_dir: /home/frontend
+    volumes:
+      - ./frontend:/home/frontend
+    ports:
+      - "3000:3000"
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    command: "npm start"
+  backend:
+    container_name: backend
+    image: node
+    user: node
+    restart: always
+    working_dir: /home/backend
+    volumes:
+      - ./backend:/home/backend
+    ports:
+      - "5000:5000"
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    command: "npm start"
