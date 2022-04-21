@@ -7,5 +7,5 @@ npm install
 cd ..
 sudo chmod 777 ./../get-docker.sh
 ./../get-docker.sh
-export URL_DB_CONNECTION=mongodb://10.128.0.14/bookstore-production
+cd backend-2
 docker-compose up -d
