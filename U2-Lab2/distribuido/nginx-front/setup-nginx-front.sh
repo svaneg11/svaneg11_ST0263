@@ -11,7 +11,7 @@ sudo certbot --nginx certonly -d www.svaneg11-lab2-distribuido.tk -d svaneg11-la
 mkdir -p ssl
 sudo cp /etc/letsencrypt/live/www.svaneg11-lab2-distribuido.tk/* /home/svaneg11/svaneg11_ST0263/U2-Lab2/distribuido/nginx-front/ssl
 sudo apt-get install psmisc
-sudo fuser 80/tcp
+sudo fuser -k 80/tcp
 sudo chmod 777 ./../get-docker.sh
 ./../get-docker.sh
 docker-compose up --build
