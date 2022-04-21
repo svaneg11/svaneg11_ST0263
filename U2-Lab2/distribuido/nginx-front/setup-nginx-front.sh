@@ -4,8 +4,7 @@ sudo apt-get update
 sudo apt-get install -y nginx
 sudo apt update
 sudo apt install -y snapd
-sudo snap install -y core
-sudo snap refresh core
+sudo snap install core; sudo snap refresh core
 sudo snap install --classic certbot
 sudo ln -s /snap/bin/certbot /usr/bin/certbot
 sudo certbot --nginx certonly -d www.svaneg11-lab2-distribuido.tk -d svaneg11-lab2-distribuido.tk
