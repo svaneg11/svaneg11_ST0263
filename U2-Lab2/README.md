@@ -4,12 +4,16 @@ La evidencia del trabajo se encuentra en el archivo pdf.
 
 ## Version Monolitica
 
+URL: https://svaneg11-lab2-monolitico.tk/
+
 * Se creo una carpeta "monolitico" para la primera version de una sola maquina virtual.
 
 
 * La version monolitica funciona con un solo docker compose.
 
 ## Version Distribuida
+
+URL: https://svaneg11-lab2-distribuido.tk/
 
 * Se creo la carpeta "distribuido" para el laboratorio hecho en varias maquinas virtuales.
 
