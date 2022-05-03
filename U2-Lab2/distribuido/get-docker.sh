@@ -11,6 +11,6 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 sudo systemctl enable docker
 sudo systemctl start docker
 sudo chmod 666 /var/run/docker.sock
-sudo usermod -a -G docker svaneg11
+sudo usermod -a -G docker $(echo $USER)
 sudo curl -L https://github.com/docker/compose/releases/download/1.29.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
