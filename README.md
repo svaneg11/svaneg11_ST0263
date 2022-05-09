@@ -17,4 +17,4 @@ Lab1:
 
 Lab2: 
 
-hola mundo 
+adios mundo 
