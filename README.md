@@ -17,4 +17,6 @@ Lab1:
 
 Lab2: 
 
-adios mundo 
+sajkdhaskldj kasjdas
+daskd asjkld jaslk
+dklasjdlkasjd iklas
